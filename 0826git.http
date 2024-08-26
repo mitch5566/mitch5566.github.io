@@ -1,0 +1,6 @@
+@_0826git_HostAddress = http://localhost:5181
+
+GET {{_0826git_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
