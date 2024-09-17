@@ -38,3 +38,32 @@ dotnet ef database update
 dotnet new class -n CategoryController -o Controllers
 
 ```
+
+
+```BASH
+ssh mi@192
+systemctl status nginx
+
+ sudo mysql -u root -p
+
+sudo service mysql status
+
+修改bind-address為你的public IP:
+
+mysql> select user from mysql.user; 
+bind-address   = 192.16
+重新啟動mysql:
+systemctl restart mysql
+
+```
+
+
+
+
+```bash 
+scp bin\Release\net8.0\linux-x64\publish\* mibaba1@ :/var/www/xxxx
+```
+
+
+
+
