@@ -1,14 +1,14 @@
 # waveforecastttt
  test for fulls
 
->xx練習
-
+>dotnet 專案
+>xx練習 練習用防失智
 
 ```json
 "DefaultConnection": "Server=192.168.118.128;User ID=;Password=;Database=cakeweb"
 ```
 
-參考
+>參考
 https://ithelp.ithome.com.tw/m/articles/10201977
 
 ```bash 
@@ -22,7 +22,6 @@ dotnet add package Pomelo.EntityFrameworkCore.MySql
 
 // 忘
 dotnet add package MySqlConnector.DependencyInjection
-
 
 /////sql用這個
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
