@@ -13,7 +13,7 @@ https://ithelp.ithome.com.tw/m/articles/10201977
 
 ```bash
 
-dotnet new mvc  -ncakeweb  -o cakeweb 
+dotnet new mvc  -n cakeweb  -o cakeweb 
 dotnet build ./bbcal/bbcal.csproj
 
 dotnet add package Microsoft.EntityFrameworkCore
@@ -39,6 +39,9 @@ dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 
 
 dotnet new class -n ApplicationDbcontext -o Data
+
+dotnet tool install --global dotnet-ef
+
 dotnet ef migrations add AddCategoryTableToDb
 dotnet ef migrations add SeedCategoryTable
 
