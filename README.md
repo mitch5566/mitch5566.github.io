@@ -48,6 +48,9 @@ dotnet new class -n CategoryController -o Controllers
 
 
 ```BASH
+xcopy dist\* ..\wwwroot\ /E /H /C /I
+
+
 ssh mi@192
 systemctl status nginx
 
