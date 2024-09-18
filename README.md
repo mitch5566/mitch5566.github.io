@@ -18,24 +18,30 @@ dotnet add package Microsoft.EntityFrameworkCore
 
 dotnet add package Microsoft.EntityFrameworkCore.Tools
 dotnet add package Microsoft.EntityFrameworkCore.Design
+//ef包
 dotnet add package Pomelo.EntityFrameworkCore.MySql
 
-// 忘
-dotnet add package MySqlConnector.DependencyInjection
 
-/////sql用這個
+
+
+
+
+//直接sql開發要用這個 不一定 跟上面擇一或共存??
+dotnet add package MySqlConnector.DependencyInjection
+/////sql server用這個 
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 
 
-dotnet new class -n ApplicationDbcontext -o Data
 
+
+
+
+dotnet new class -n ApplicationDbcontext -o Data
 dotnet ef migrations add AddCategoryTableToDb
 dotnet ef migrations add SeedCategoryTable
 
-
 dotnet ef database update
 dotnet new class -n CategoryController -o Controllers
-
 ```
 
 
@@ -58,11 +64,9 @@ systemctl restart mysql
 
 
 
-
 ```bash 
 scp bin\Release\net8.0\linux-x64\publish\* mibaba1@ :/var/www/xxxx
 ```
-
 
 
 
