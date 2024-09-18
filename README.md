@@ -11,7 +11,9 @@
 >參考
 https://ithelp.ithome.com.tw/m/articles/10201977
 
-```bash 
+```bash
+
+dotnet new mvc  -ncakeweb  -o cakeweb 
 dotnet build ./bbcal/bbcal.csproj
 
 dotnet add package Microsoft.EntityFrameworkCore
