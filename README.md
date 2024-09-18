@@ -78,3 +78,10 @@ scp bin\Release\net8.0\linux-x64\publish\* mibaba1@ :/var/www/xxxx
 
 
 
+```dotnet
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"), new MySqlServerVersion(new Version(8, 0, 23))));
+```
+
+
+
