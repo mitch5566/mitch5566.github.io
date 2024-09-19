@@ -38,7 +38,7 @@ dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 
 
 
-dotnet new class -n ApplicationDbcontext -o Data
+dotnet new class -n ApplicationDbContext -o Data
 
 dotnet tool install --global dotnet-ef
 
