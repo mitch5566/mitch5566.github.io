@@ -76,6 +76,7 @@ dotnet new class -n CategoryController -o Controllers
 ```bash
 mkdir Views\Category
 echo "" > Views\Category\Index.cshtml
+echo "" > Views\Category\Create.cshtml
 ```
 
 
