@@ -6,6 +6,12 @@
 
 ```json
 "DefaultConnection": "Server=192.168.118.128;User ID=;Password=;Database=cakeweb"
+
+
+"ConnectionStrings": {
+    "DefaultConnection": "server=localhost;Port=3306 ......"
+}
+
 ```
 
 >參考
