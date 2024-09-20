@@ -17,6 +17,13 @@
 >參考
 https://ithelp.ithome.com.tw/m/articles/10201977
 
+pg.cs
+```csharp
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
+    new MySqlServerVersion(new Version(8, 0, 26))));
+```
+
 ```bash
 
 dotnet new mvc  -n cakeweb  -o cakeweb 
@@ -29,6 +36,14 @@ dotnet add package Microsoft.EntityFrameworkCore.Design
 //ef包
 dotnet add package Pomelo.EntityFrameworkCore.MySql
 
+
+
+
+
+
+dotnet new class -n Category -o Models
+
+dotnet new class -n ApplicationDbContext -o Data
 
 
 
