@@ -68,7 +68,18 @@ dotnet ef migrations add SeedCategoryTable
 
 dotnet ef database update
 dotnet new class -n CategoryController -o Controllers
+
 ```
+
+>開始建View
+
+```bash
+mkdir Views\Category
+echo "" > Views\Category\Index.cshtml
+```
+
+
+
 
 
 ```BASH
